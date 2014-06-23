@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Ideevo Spagat</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/normalize.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/css/foundation.css" media="all" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+      * {
+        padding:0;
+        margin:0;
+      }
+
+      html, body {
+        height:100%;
+        background-color: #fff;
+      }
+
+      .skrollr-desktop body {
+        height:100% !important;
+      }
+
+      h4, p {
+        font-weight: 300;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+
+      .parallax-image-wrapper {
+        position:fixed;
+        left:0;
+        width:100%;
+        overflow:hidden;
+      }
+
+      .parallax-image-wrapper-50 {
+        height:50%;
+        top:-50%;
+      }
+
+      .parallax-image-wrapper-100 {
+        height:100%;
+        top:-100%;
+      }
+
+      .parallax-image {
+        display:none;
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+      }
+
+      .parallax-image-50 {
+        height:200%;
+        top:-50%;
+      }
+
+      .parallax-image-100 {
+        height:100%;
+        top:0;
+      }
+
+      .parallax-image.skrollable-between {
+        display:block;
+      }
+
+      .no-skrollr .parallax-image-wrapper {
+        display:none !important;
+      }
+
+      #skrollr-body {
+        height:100%;
+        overflow:visible;
+        position:relative;
+      }
+
+      .gap {
+        background:transparent center no-repeat;
+        background-size:cover;
+      }
+
+      .skrollr .gap {
+        background:transparent !important;
+      }
+
+      .gap-50 {
+        height:50%;
+      }
+
+      .gap-100 {
+        height:100%;
+      }
+
+      .header, .content {
+        padding:1em;
+
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        box-sizing:border-box;
+      }
+
+      .content-full {
+        height:100%;
+      }
+
+      #done {
+        height:100%;
+      }
+
+      .footer {
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="parallax-image-wrapper parallax-image-wrapper-100"
+      data-anchor-target="#hanger + .gap"
+      data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+      data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+      <div class="parallax-image parallax-image-100"
+        style="background-image:url(hanger.jpg)"
+        data-anchor-target="#hanger + .gap"
+        data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+        data-top-bottom="transform: translate3d(0px, 80%, 0px);">
+      </div>
+    </div>
+
+    <div
+      class="parallax-image-wrapper parallax-image-wrapper-100"
+      data-anchor-target="#second + .gap"
+      data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+      data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+      <div
+        class="parallax-image parallax-image-100"
+        style="background-image:url()"
+        data-anchor-target="#second + .gap"
+        data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+        data-top-bottom="transform: translate3d(0px, 60%, 0px);">
+      <div class="flex-video widescreen"> <iframe width="560" height="315" src="http://www.youtube.com/embed/MUcq6y3tmDk?autoplay=1&controls=0&rel=0" frameborder="0" allowfullscreen></iframe> </div>
+      </div>
+
+    </div>
+
+    <div
+      class="parallax-image-wrapper parallax-image-wrapper-100"
+      data-anchor-target="#herokit + .gap"
+      data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+      data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+      <div
+        class="parallax-image parallax-image-100"
+        style="background-image:url(herokit.jpg)"
+        data-anchor-target="#herokit + .gap"
+        data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+        data-top-bottom="transform: translate3d(0px, 60%, 0px);">
+      </div>
+
+    </div>
+
+    <div id="skrollr-body">
+
+      <div class="header" id="hanger" style="background-color: black; border: 0; padding: 0"></div>
+
+      <div class="gap gap-100" style="background-image:url(hanger.jpg);">
+        <p>
+          <img src="spagat.png" style="margin-left: 10%; margin-top: 5%">
+        </p>
+        <h4 style="margin-left: 5%; width: 50%; color: #fff">
+          Zögern Sie nicht, Ihre heißgeliebten Textilien – sei es Ihr Lieblings-Shirt, sei es Ihr Fantrikot – endlich stilecht zu präsentieren.
+          <br><br>
+          Für nur <strong>18,99 EUR</strong>!
+        </h4>
+      </div>
+
+      <div class="content  text-center" id="second">
+        <h3>
+          Das ideale Geschenk
+        </h3>
+        <p>
+          Helmut Rahn gelang im Berner Wankdorf-Stadion 1954 ein Volltreffer, der nicht nur den Kommentator in absolute Ekstase versetzte.
+          Nein, dieser Treffer hat sich bis heute regelrecht ins kollektive Bewusstsein Deutschlands eingebrannt.
+        </p>
+        <p>
+          Unser Helmut schießt zwar keine spielentscheidenden, geschichtsträchtigen Tore, aber das braucht er auch nicht, weil er schon für sich genommen ein optischer Volltreffer ist, der umgehend alle Blicke auf sich ziehen wird.
+        </p>
+        <p>
+          Sie haben es satt, Jahr für Jahr Krawatten oder Parfüm zu verschenken? Sie wollen Ihren Lieben anstatt eines müden mal wieder ein überraschtes Lächeln ins Gesicht zaubern?
+          Dann sind Sie bei uns genau richtig!
+        </p>
+        <p>
+          Unser Helmut wird sich sofort in den Fokus spielen und jede Garderobe umgehend gekonnt in Szene setzen.
+        </p>
+      </div>
+
+      <div class="gap gap-100" style="background-image:url();"></div>
+
+      <div class="content text-center" id="herokit">
+          <h3>
+            Jetzt mal ehrlich!
+          </h3>
+        <p>
+          Würden Sie etwa Unsummen für einen teuren Sportwagen ausgeben und an den Alu-Felgen sparen? Nein?
+          <br>Würden Sie etwa Badelatschen zum Smoking tragen? Nein?
+          <br>Würden Sie etwa einen edlen Tropfen aus dem Pappbecher trinken? Nein?
+        </p>
+        <p>
+          Sollten Sie dann nicht auch die Farben Ihres Vereins angemessen behandeln?
+        </p>
+        <p>
+          Bedrucken Sie unseren Kleiderbügel individuell mit Ihrem eigenen Namen, Ihrer persönlichen Spielernummer oder Ihrem Firmenlogo.
+          Nehmen sie unsere Vorlage volley und bestellen Sie noch heute unseren Fan-Kleiderbügel.
+        </p>
+
+      </div>
+
+      <div class="gap gap-100" style="background-image:url(herokit.jpg);"></div>
+
+      <div class="content content-full  text-center" id="done">
+        <p>
+        <img src="ideevo.png">
+        </p>
+        <p>
+          Wir sind drei kreative Köpfe, die kein Verständnis dafür haben, dass es ein Naturgesetz zu sein scheint, dass das Nützliche immer langweilig und dröge daherkommen muss.
+        </p>
+        <p>
+          Wir sind der Überzeugung, dass nützliche Dinge gleichzeitig schön sein sollten. Und da es auf dieser Welt noch viele unglaublich nützliche (und gleichzeitig hässliche) Dinge gibt, lohnt es sich hin und wieder auf unserer Seite vorbei zu schauen :)
+        </p>
+        <p>
+          Mal schauen, was wir als nächstes Aufhübschen!
+        </p>
+        <p>
+          <strong>Dein Ideevo-Team</strong><br>
+        </p>
+        <p class="footer">
+          Hildebrandt, Bauer, Isbrecht GbR<br>
+          Christian-Lassen Str.16<br>
+          53117 Bonn<br>
+          Tel: 0152 53924929<br>
+          Fax: 0228 4466746<br>
+          <a href="mailto:info@ideevo.com">info@ideevo.com</a>
+        </p>
+        <p class="footer">
+          <strong>Geschäftsführung</strong><br>
+          <a href="mailto:jev@ideevo.com">Jev Bauer</a><br>
+          <a href="mailto:helmut@ideevo.com">Helmut Isbrecht</a><br>
+          <a href="mailto:david@ideevo.com">David Hildebrandt</a><br>
+        </p>
+        <p class="footer">
+          <strong>Bankverbindung</strong><br>
+          Empfänger: Hildebrandt, Bauer, Isbrecht GbR<br>
+          BLZ: 38070024<br>
+          Konto: 322604000<br>
+        </p>
+        <br>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.3/js/foundation/foundation.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.26/skrollr.min.js"></script>
+    <script type="text/javascript">var s = skrollr.init();</script>
+  </body>
+
+</html>
